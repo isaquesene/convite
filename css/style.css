@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@500&display=swap');
+
 body{
 	
 	height: 100vh;
@@ -15,7 +17,7 @@ body{
 	position: relative;
 	background: #8ba286;
 	cursor: pointer;
-	border-radius: 10px;
+	border-radius: 0 0 10px 10px;
 	border-color: white;
 	box-shadow: #000000  10px 10px 20px -10px;
 }
@@ -23,13 +25,15 @@ body{
 
 
 .top-side{
-	border-bottom: 150px solid #8ba286;
-	top: -150px;
+	border-bottom: 130px solid #8ba286;
+	top: -130px;
 	transform-origin: bottom;
 	z-index: 6;
 	transform: rotateX(180deg);
-	transition: all .8s ease;
+	transition: all .8s ease-in-out;
 	transition-delay: 0.6s;
+
+
 }
 
 .bottom-side{
@@ -45,14 +49,13 @@ body{
 	border-left: 150px solid transparent;
 	border-right: 150px solid transparent;
 	position: relative;
-	border-radius: 10px;
 }
 
 .left-side{
 	border-left: 125px solid #435127;
 	position: absolute;
 	left: 0;
-	border-radius: 10px;
+	border-radius: 0 0 10px 10px;
 
 }
 
@@ -60,7 +63,7 @@ body{
 	border-right: 125px solid #435127;
 	position: absolute;
 	right: 0;
-	border-radius: 10px;
+	border-radius: 0 0 10px 10px;
 
 }
 
@@ -78,13 +81,14 @@ body{
 	left: 98%;
 	transform: translateX(-50%);
 	z-index: 3;
-	transition: all 1s ease;
+	transition: all 1s ease-in-out;
 }
 
 .image img{
 	width: 40%;
 	align-items: center;
 	justify-content: center;
+	border: #8ba286 solid 0.01px;
 }
 
 .envelope:hover .top-side{
@@ -99,3 +103,14 @@ body{
 	transition-delay: 0.6s;
 }
 
+.msg{
+	width: 180px;
+	height: 30px;
+	position: absolute;
+	z-index: 311;
+	top:  550px;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+	margin: 25px;
+}
